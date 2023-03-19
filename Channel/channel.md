@@ -1,0 +1,7 @@
+-Channels are an essential part of concurrent programming in Go. They are used to communicate between goroutines and synchronize their execution. Channels allow goroutines to share data without the need for explicit locking, which can help prevent race conditions and other synchronization issues.
+
+-Channels provide a safe way to pass data between goroutines by ensuring that only one goroutine has access to the data at any given time. When data is sent over a channel, the sender blocks until the data is received by the receiver, ensuring that the data is available for use. Similarly, when data is received from a channel, the receiver blocks until the data is available, ensuring that the data is not accessed before it is ready.
+
+-Channels also provide a mechanism for signaling between goroutines. A channel can be used to send signals or messages that indicate when a task has completed, allowing other goroutines to continue execution or perform some action in response to the signal.
+
+-In summary, channels are essential for concurrent programming in Go because they provide a safe and efficient way to share data and communicate between goroutines. They help prevent race conditions and synchronization issues, and enable efficient and effective parallel execution of tasks.
